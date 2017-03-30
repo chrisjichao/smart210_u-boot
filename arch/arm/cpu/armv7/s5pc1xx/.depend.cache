@@ -1,0 +1,3 @@
+cache.o: cache.S /home/orchid/u-boot/include/linux/linkage.h \
+ /home/orchid/u-boot/include/asm/linkage.h \
+ /home/orchid/u-boot/include/linux/config.h

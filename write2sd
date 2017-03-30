@@ -1,0 +1,6 @@
+#!/bin/sh
+make -j2
+./210 u-boot.bin 210.bin
+sudo dd iflag=dsync oflag=dsync if=210.bin of=/dev/sdb seek=1
+sudo dd iflag=dsync oflag=dsync if=u-boot.bin of=/dev/sdb seek=49
+sudo dd iflag=dsync oflag=dsync if=uImage of=/dev/sdb seek=1000

@@ -1,0 +1,1 @@
+mmc_relocate.o: mmc_relocate.c

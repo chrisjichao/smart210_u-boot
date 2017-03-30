@@ -1,0 +1,277 @@
+for dir in tools examples/standalone examples/api arch/arm/cpu/armv7  ; do \
+			make -C $dir _depend ; done
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/tools'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/tools'
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/examples/standalone'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/examples/standalone'
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/examples/api'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/examples/api'
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7'
+make -C tools all
+make -C arch/arm/cpu/armv7 start.o
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7'
+arm-linux-gcc   -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x34800000 -I/home/orchid/u-boot-2012.10/include -fno-builtin -ffreestanding -nostdinc -isystem /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -pipe  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -march=armv7-a    -o start.o start.S -c
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/tools'
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/tools'
+make -C /home/orchid/u-boot-2012.10/arch/arm/cpu/ u-boot.lds
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7'
+make -C api/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu'
+make[1]: 没有什么可以做的为 `u-boot.lds'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu'
+make -C arch/arm/cpu/armv7/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/api'
+make[1]: “libapi.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/api'
+make -C arch/arm/cpu/armv7/s5p-common/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7'
+make -C arch/arm/cpu/armv7/s5pc1xx/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7/s5p-common'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7/s5p-common'
+make -C arch/arm/lib/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7/s5pc1xx'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/cpu/armv7/s5pc1xx'
+make -C board/samsung/common/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/arch/arm/lib'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x34800000 -I/home/orchid/u-boot-2012.10/include -fno-builtin -ffreestanding -nostdinc -isystem /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -pipe  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -march=armv7-a  -Wall -Wstrict-prototypes -fno-stack-protector -Wno-format-nonliteral -Wno-format-security      -o board.o board.c -c
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/board/samsung/common'
+make[1]: “libsamsung.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/board/samsung/common'
+make -C common/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/common'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x34800000 -I/home/orchid/u-boot-2012.10/include -fno-builtin -ffreestanding -nostdinc -isystem /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -pipe  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -march=armv7-a  -Wall -Wstrict-prototypes -fno-stack-protector -Wno-format-nonliteral -Wno-format-security      -o cmd_version.o cmd_version.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x34800000 -I/home/orchid/u-boot-2012.10/include -fno-builtin -ffreestanding -nostdinc -isystem /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -pipe  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -march=armv7-a  -Wall -Wstrict-prototypes -fno-stack-protector -Wno-format-nonliteral -Wno-format-security      -o main.o main.c -c
+arm-linux-ld  -r -o libarm.o  board.o bootm.o interrupts.o reset.o cache.o cache-cp15.o
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/arch/arm/lib'
+make -C disk/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/disk'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/disk'
+make -C drivers/bios_emulator/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/bios_emulator'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/bios_emulator'
+make -C drivers/block/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/block'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/block'
+make -C drivers/dfu/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/dfu'
+make[1]: “libdfu.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/dfu'
+make -C drivers/dma/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/dma'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/dma'
+make -C drivers/fpga/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/fpga'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/fpga'
+make -C drivers/gpio/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/gpio'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/gpio'
+make -C drivers/hwmon/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/hwmon'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/hwmon'
+make -C drivers/i2c/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/i2c'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/i2c'
+make -C drivers/input/
+arm-linux-ld  -r -o libcommon.o  cmd_bdinfo.o cmd_boot.o cmd_bootm.o cmd_cache.o cmd_console.o cmd_disk.o cmd_echo.o cmd_exit.o cmd_help.o cmd_itest.o cmd_load.o cmd_mem.o cmd_mmc.o cmd_mtdparts.o cmd_nvedit.o cmd_onenand.o cmd_pcmcia.o cmd_reginfo.o cmd_source.o cmd_test.o cmd_version.o command.o console.o dlmalloc.o env_common.o env_nowhere.o exports.o flash.o hush.o image.o main.o memsize.o s_record.o serial.o stdio.o xyzModem.o
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/input'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/input'
+make -C drivers/misc/
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/common'
+make -C drivers/mmc/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/misc'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/misc'
+make -C drivers/mtd/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/mmc'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/mmc'
+make -C drivers/mtd/nand/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/mtd'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/mtd'
+make -C drivers/mtd/onenand/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/mtd/nand'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/mtd/nand'
+make -C drivers/mtd/spi/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/mtd/onenand'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/mtd/onenand'
+make -C drivers/mtd/ubi/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/mtd/spi'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/mtd/spi'
+make -C drivers/net/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/mtd/ubi'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/mtd/ubi'
+make -C drivers/net/phy/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/net'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/net'
+make -C drivers/pci/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/net/phy'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/net/phy'
+make -C drivers/pcmcia/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/pci'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/pci'
+make -C drivers/power/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/pcmcia'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/pcmcia'
+make -C drivers/rtc/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/power'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/power'
+make -C drivers/serial/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/rtc'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/rtc'
+make -C drivers/spi/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/serial'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/serial'
+make -C drivers/twserial/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/spi'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/spi'
+make -C drivers/usb/eth/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/twserial'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/twserial'
+make -C drivers/usb/gadget/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/usb/eth'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/usb/eth'
+make -C drivers/usb/host/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/usb/gadget'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/usb/gadget'
+make -C drivers/usb/musb/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/usb/host'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/usb/host'
+make -C drivers/usb/phy/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/usb/musb'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/usb/musb'
+make -C drivers/usb/ulpi/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/usb/phy'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/usb/phy'
+make -C drivers/video/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/usb/ulpi'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/usb/ulpi'
+make -C drivers/watchdog/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/video'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/video'
+make -C fs/cramfs/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/drivers/watchdog'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/drivers/watchdog'
+make -C fs/ext4/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/cramfs'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/cramfs'
+make -C fs/fat/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/ext4'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/ext4'
+make -C fs/fdos/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/fat'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/fat'
+make -C fs/jffs2/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/fdos'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/fdos'
+make -C fs/reiserfs/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/jffs2'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/jffs2'
+make -C fs/ubifs/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/reiserfs'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/reiserfs'
+make -C fs/yaffs2/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/ubifs'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/ubifs'
+make -C fs/zfs/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/yaffs2'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/yaffs2'
+make -C lib/libfdt/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/fs/zfs'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/fs/zfs'
+make -C lib/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/lib/libfdt'
+make[1]: “libfdt.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/lib/libfdt'
+make -C lib/lzma/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/lib'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x34800000 -I/home/orchid/u-boot-2012.10/include -fno-builtin -ffreestanding -nostdinc -isystem /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -pipe  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -march=armv7-a  -Wall -Wstrict-prototypes -fno-stack-protector -Wno-format-nonliteral -Wno-format-security      -o display_options.o display_options.c -c
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/lib/lzma'
+make[1]: “liblzma.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/lib/lzma'
+make -C lib/lzo/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/lib/lzo'
+make[1]: “liblzo.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/lib/lzo'
+make -C lib/zlib/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/lib/zlib'
+make[1]: “libz.o”是最新的。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/lib/zlib'
+make -C net/
+arm-linux-ld  -r -o libgeneric.o  crc16.o crc32.o crc7.o ctype.o display_options.o div64.o errno.o gunzip.o hashtable.o ldiv.o lmb.o net_utils.o qsort.o string.o strmhz.o time.o vsprintf.o
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/lib'
+make -C post/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/net'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/net'
+make -C test/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/post'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/post'
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/test'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/test'
+make -C board/samsung/smart210/
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/board/samsung/smart210'
+arm-linux-gcc   -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x34800000 -I/home/orchid/u-boot-2012.10/include -fno-builtin -ffreestanding -nostdinc -isystem /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -pipe  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -march=armv7-a    -o lowlevel_init.o lowlevel_init.S -c
+arm-linux-ld  -r -o libsmart210.o  lowlevel_init.o mmc_relocate.o smart210.o onenand.o
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/board/samsung/smart210'
+UNDEF_SYM=`arm-linux-objdump -x board/samsung/smart210/libsmart210.o api/libapi.o arch/arm/cpu/armv7/libarmv7.o arch/arm/cpu/armv7/s5p-common/libs5p-common.o arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o arch/arm/lib/libarm.o board/samsung/common/libsamsung.o common/libcommon.o disk/libdisk.o drivers/bios_emulator/libatibiosemu.o drivers/block/libblock.o drivers/dfu/libdfu.o drivers/dma/libdma.o drivers/fpga/libfpga.o drivers/gpio/libgpio.o drivers/hwmon/libhwmon.o drivers/i2c/libi2c.o drivers/input/libinput.o drivers/misc/libmisc.o drivers/mmc/libmmc.o drivers/mtd/libmtd.o drivers/mtd/nand/libnand.o drivers/mtd/onenand/libonenand.o drivers/mtd/spi/libspi_flash.o drivers/mtd/ubi/libubi.o drivers/net/libnet.o drivers/net/phy/libphy.o drivers/pci/libpci.o drivers/pcmcia/libpcmcia.o drivers/power/libpower.o drivers/rtc/librtc.o drivers/serial/libserial.o drivers/spi/libspi.o drivers/twserial/libtws.o drivers/usb/eth/libusb_eth.o drivers/usb/gadget/libusb_gadget.o drivers/usb/host/libusb_host.o drivers/usb/musb/libusb_musb.o drivers/usb/phy/libusb_phy.o drivers/usb/ulpi/libusb_ulpi.o drivers/video/libvideo.o drivers/watchdog/libwatchdog.o fs/cramfs/libcramfs.o fs/ext4/libext4fs.o fs/fat/libfat.o fs/fdos/libfdos.o fs/jffs2/libjffs2.o fs/reiserfs/libreiserfs.o fs/ubifs/libubifs.o fs/yaffs2/libyaffs2.o fs/zfs/libzfs.o lib/libfdt/libfdt.o lib/libgeneric.o lib/lzma/liblzma.o lib/lzo/liblzo.o lib/zlib/libz.o net/libnet.o post/libpost.o test/libtest.o | sed  -n -e 's/.*\(__u_boot_cmd_.*\)/-u\1/p'|sort|uniq`; cd /home/orchid/u-boot-2012.10 && arm-linux-ld  -pie -T u-boot.lds -Bstatic -Ttext 0x34800000 $UNDEF_SYM arch/arm/cpu/armv7/start.o --start-group board/samsung/smart210/libsmart210.o api/libapi.o arch/arm/cpu/armv7/libarmv7.o arch/arm/cpu/armv7/s5p-common/libs5p-common.o arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o arch/arm/lib/libarm.o board/samsung/common/libsamsung.o common/libcommon.o disk/libdisk.o drivers/bios_emulator/libatibiosemu.o drivers/block/libblock.o drivers/dfu/libdfu.o drivers/dma/libdma.o drivers/fpga/libfpga.o drivers/gpio/libgpio.o drivers/hwmon/libhwmon.o drivers/i2c/libi2c.o drivers/input/libinput.o drivers/misc/libmisc.o drivers/mmc/libmmc.o drivers/mtd/libmtd.o drivers/mtd/nand/libnand.o drivers/mtd/onenand/libonenand.o drivers/mtd/spi/libspi_flash.o drivers/mtd/ubi/libubi.o drivers/net/libnet.o drivers/net/phy/libphy.o drivers/pci/libpci.o drivers/pcmcia/libpcmcia.o drivers/power/libpower.o drivers/rtc/librtc.o drivers/serial/libserial.o drivers/spi/libspi.o drivers/twserial/libtws.o drivers/usb/eth/libusb_eth.o drivers/usb/gadget/libusb_gadget.o drivers/usb/host/libusb_host.o drivers/usb/musb/libusb_musb.o drivers/usb/phy/libusb_phy.o drivers/usb/ulpi/libusb_ulpi.o drivers/video/libvideo.o drivers/watchdog/libwatchdog.o fs/cramfs/libcramfs.o fs/ext4/libext4fs.o fs/fat/libfat.o fs/fdos/libfdos.o fs/jffs2/libjffs2.o fs/reiserfs/libreiserfs.o fs/ubifs/libubifs.o fs/yaffs2/libyaffs2.o fs/zfs/libzfs.o lib/libfdt/libfdt.o lib/libgeneric.o lib/lzma/liblzma.o lib/lzo/liblzo.o lib/zlib/libz.o net/libnet.o post/libpost.o test/libtest.o  --end-group /home/orchid/u-boot-2012.10/arch/arm/lib/eabi_compat.o  -L /4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1 -lgcc -Map u-boot.map -o u-boot
+arm-linux-objcopy -O srec u-boot u-boot.srec
+arm-linux-objcopy --gap-fill=0xff -O binary u-boot u-boot.bin
+make -C examples/standalone all
+make -C examples/api all
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/examples/standalone'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/examples/standalone'
+make[1]: 正在进入目录 `/home/orchid/u-boot-2012.10/examples/api'
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/orchid/u-boot-2012.10/examples/api'

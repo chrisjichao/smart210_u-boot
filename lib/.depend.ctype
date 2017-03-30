@@ -1,0 +1,1 @@
+ctype.o: ctype.c /home/orchid/u-boot/include/linux/ctype.h
